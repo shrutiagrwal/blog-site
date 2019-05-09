@@ -1,0 +1,11 @@
+<h1>this is our show page</h1>
+<%=campgrounds.description %>
+<a href="/campgrounds/<%=campgrounds._id %>/comments/new"> new comment</a>
+<%campgrounds.comment.forEach(function(comment){%>
+  <ul>
+      <li>
+          <%=comment.author%>
+          <%=comment.text%>
+      </li>
+  </ul>
+<%});%>

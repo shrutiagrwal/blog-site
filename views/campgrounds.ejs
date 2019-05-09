@@ -1,0 +1,8 @@
+<h1>campgrounds</h1>
+<a href="/campground/new">create new campground</a>
+<%campgrounds.forEach(function(campground){%>
+<ul>
+    <li><a href="/campgrounds/<%=campground._id%>"><%=campground.name%></a></li>
+</ul>
+
+<%});%>
